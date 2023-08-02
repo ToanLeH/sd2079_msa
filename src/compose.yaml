@@ -51,6 +51,9 @@ services:
     links:
       - cadvisor:cadvisor
       - alertmanager:alertmanager
+    networks:
+      - express-mongo
+      - react-express
     depends_on:
       - cadvisor
 
@@ -68,6 +71,9 @@ services:
     ports:
       - 9100:9100
     restart: always
+    networks:
+      - express-mongo
+      - react-express
     deploy:
       mode: global
 
@@ -81,6 +87,9 @@ services:
     command:
       - '--config.file=/etc/alertmanager/config.yml'
       - '--storage.path=/alertmanager'
+    networks:
+      - express-mongo
+      - react-express
 
   cadvisor:
     image: gcr.io/cadvisor/cadvisor
@@ -94,6 +103,9 @@ services:
     restart: always
     deploy:
       mode: global
+    networks:
+      - express-mongo
+      - react-express
 
   grafana:
     image: grafana/grafana
@@ -110,6 +122,9 @@ services:
       - 5001:5001
     depends_on:
       - prometheus
+    networks:
+      - express-mongo
+      - react-express
 
 volumes:
   devops-mongo:
