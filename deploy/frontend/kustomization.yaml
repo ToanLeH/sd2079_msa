@@ -3,8 +3,6 @@ kind: Kustomization
 images:
 - name: eks-dev-argo-frontend
   newName: 663535708029.dkr.ecr.ap-south-1.amazonaws.com/ecr-toanleh-devops-frontend
-  newTag: "10"
-- name: 663535708029.dkr.ecr.ap-south-1.amazonaws.com/ecr-toanleh-devops-frontend
   newTag: "11"
 resources:
 - _deployment.yaml
