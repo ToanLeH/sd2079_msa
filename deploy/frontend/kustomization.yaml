@@ -6,6 +6,4 @@ images:
   newTag: "10"
 resources:
 - _deployment.yaml
-- _pdb.yaml
 - _service.yaml
-- _hpa.yaml 
