@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: 663535708029.dkr.ecr.ap-south-1.amazonaws.com/ecr-toanleh-devops-frontend:latest
+          image: eks-dev-argo-frontend
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
