@@ -6,7 +6,7 @@ name: backend
 
 # Image repository and tag for the backend container
 image:
-  repository: 663535708029.dkr.ecr.ap-south-1.amazonaws.com/ecr-toanleh-devops-backend:latest
+  repository: 663535708029.dkr.ecr.ap-south-1.amazonaws.com/ecr-toanleh-devops-backend
   tag: latest
 
 # Port for the backend service

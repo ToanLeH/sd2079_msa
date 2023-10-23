@@ -6,7 +6,7 @@ name: frontend
 
 # Image repository and tag for the frontend container
 image:
-  repository: 663535708029.dkr.ecr.ap-south-1.amazonaws.com/ecr-toanleh-devops-frontend:latest
+  repository: 663535708029.dkr.ecr.ap-south-1.amazonaws.com/ecr-toanleh-devops-frontend
   tag: latest
 
 # Port for the frontend service
